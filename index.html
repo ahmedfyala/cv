@@ -1,302 +1,434 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ahmed Mahmoud Fyala CV</title>
-    <style>
-      body {
-        margin: 0;
-        background: #f3f4f6;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #111827;
-      }
-      .page {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        padding: 11mm 12mm;
-        box-sizing: border-box;
-        background: #fff;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-      }
-      h1 {
-        font-size: 25px;
-        margin: 0 0 4px;
-        text-align: center;
-      }
-      .role {
-        font-size: 15px;
-        color: #4b5563;
-        text-align: center;
-        margin-bottom: 4px;
-      }
-      .contact {
-        font-size: 11.5px;
-        text-align: center;
-        color: #4b5563;
-        margin-bottom: 6px;
-        line-height: 1.5;
-      }
-      a {
-        color: #1d4ed8;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      h2 {
-        font-size: 12.5px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin: 10px 0 4px;
-        border-bottom: 1px solid #d1d5db;
-        padding-bottom: 3px;
-        color: #0f172a;
-      }
-      p {
-        margin: 0 0 4px;
-        font-size: 12px;
-        line-height: 1.38;
-      }
-      .skills p {
-        margin: 0 0 2px;
-      }
-      .job {
-        margin-bottom: 4px;
-      }
-      .jobhead {
-        font-size: 13px;
-        margin-bottom: 1px;
-      }
-      .jobhead strong {
-        font-size: 13px;
-      }
-      .meta {
-        color: #4b5563;
-      }
-      ul {
-        margin: 2px 0 1px 16px;
-        padding: 0;
-      }
-      li {
-        font-size: 11.5px;
-        line-height: 1.38;
-        margin-bottom: 0;
-      }
-      .proj {
-        margin-bottom: 3px;
-        font-size: 12px;
-        line-height: 1.38;
-      }
-      @page {
-        size: A4;
-        margin: 0;
-      }
-      @media print {
-        body {
-          background: #fff;
-        }
-        .page {
-          margin: 0;
-          padding: 11mm 12mm;
-          box-shadow: none;
-          width: auto;
-          min-height: auto;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <h1>Ahmed Mahmoud Fyala</h1>
-      <div class="role">Senior Flutter Developer</div>
-      <div class="contact">
-        afyala115@gmail.com | +201028418483 | Cairo, Egypt | Military status:
-        Exempt |
-        <a href="https://www.linkedin.com/in/ahmedfyala">LinkedIn</a> |
-        <a href="https://github.com/ahmedfyala">GitHub</a> |
-        <a href="https://ahmedfyala.github.io/">Portfolio</a> |
-        <a href="https://www.behance.net/ahmedfyala5">Behance</a>
-      </div>
-      <h2>Summary</h2>
-      <p>
-        Senior Flutter Developer with 3+ years building production mobile
-        applications across booking, logistics, education, and real estate
-        domains. Comfortable owning features end-to-end using Clean
-        Architecture and BLoC, from implementation and debugging to release and
-        maintenance. Experienced working in cross-functional teams, improving
-        app stability and delivery speed, and mentoring Flutter developers into
-        their first production roles.
-      </p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Fyala — Senior Flutter Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-      <h2>Experience</h2>
-      <div class="job">
-        <div class="jobhead">
-          <strong>Flutter Developer — Homa</strong>
-          <span class="meta">| Dec 2025 – Present | Hybrid, Full-time</span>
-        </div>
-        <ul>
-          <li>
-            Led delivery of core host experience flows — including cancellation,
-            cleaning services, and listing browsing — using Clean Architecture
-            and BLoC, giving hosts clearer control over their bookings and
-            reducing escalation to support.
-          </li>
-          <li>
-            Investigated and resolved critical production issues across
-            notifications, media loading, and API usage (HTTP 429 rate
-            limiting, race conditions), resulting in a noticeably more stable
-            experience under peak traffic.
-          </li>
-          <li>
-            Redesigned listing experience from paginated pages to infinite
-            scroll, making property discovery smoother and more natural for
-            users.
-          </li>
-          <li>
-            Automated and improved the release pipeline with GitHub Actions,
-            Fastlane, and Shorebird OTA, shortening release cycles and enabling
-            safe hotfixes to production without disrupting users.
-          </li>
-        </ul>
-        <p>
-          Saudi-focused booking platform |
-          <a href="https://apps.apple.com/us/app/homa/id6744891013">App Store</a>
-          |
-          <a href="https://play.google.com/store/apps/details?id=com.homa.homaapp.app">Google Play</a>
-        </p>
-      </div>
-      <div class="job">
-        <div class="jobhead">
-          <strong>Flutter Developer — Cakestay</strong>
-          <span class="meta">| Feb 2025 – Nov 2025 | Remote, Full-time</span>
-        </div>
-        <ul>
-          <li>
-            Owned end-to-end booking and marketplace flows from onboarding to
-            checkout, helping bring the product from zero to live apps on the
-            App Store and Google Play.
-          </li>
-          <li>
-            Integrated Stripe and Paymob with Firebase backend to support
-            secure, multi-currency payments, allowing the platform to serve both
-            local and international users.
-          </li>
-          <li>
-            Shipped fully localized (EN/AR), responsive UI with real-time push
-            notifications, improving day-to-day engagement across both
-            platforms.
-          </li>
-        </ul>
-        <p>
-          Cakestay App |
-          <a href="https://apps.apple.com/us/app/cakestay/id6747120526">App Store</a>
-          |
-          <a href="https://play.google.com/store/apps/details?id=com.cakestay.app">Google Play</a>
-        </p>
-      </div>
-      <div class="job">
-        <div class="jobhead">
-          <strong>Flutter Developer — Baroline</strong>
-          <span class="meta">| Nov 2024 – May 2025 | Remote</span>
-        </div>
-        <ul>
-          <li>
-            Built core logistics workflows — shipment creation, wallet
-            management, and automated PDF generation — reducing manual
-            back-office work and making order processing smoother for
-            operations teams.
-          </li>
-          <li>
-            Implemented real-time GPS tracking and location-based branch
-            discovery, giving field teams live visibility on shipments and
-            making daily coordination easier.
-          </li>
-        </ul>
-      </div>
-      <div class="job">
-        <div class="jobhead">
-          <strong>Flutter Developer — Semicolon</strong>
-          <span class="meta">| Dec 2023 – Nov 2024 | Remote, Full-time</span>
-        </div>
-        <ul>
-          <li>
-            Architected multi-tenant support for a cross-school education
-            platform via dynamic API configuration, allowing the product to
-            onboard multiple institutions without per-client forks or additional
-            infrastructure.
-          </li>
-          <li>
-            Led post-migration debugging and UI refactoring efforts, reducing
-            crashes and improving store ratings and user feedback over the
-            following months.
-          </li>
-        </ul>
-        <p>
-          Jsoor App |
-          <a href="https://apps.apple.com/eg/app/jesoor/id6739429898">App Store</a>
-          |
-          <a href="https://play.google.com/store/apps/details?id=semicolon.jessor.stu">Google Play</a>
-        </p>
-      </div>
-      <div class="job">
-        <div class="jobhead">
-          <strong>Flutter Mentor — Route</strong>
-          <span class="meta">| Dec 2023 – Apr 2026</span>
-        </div>
-        <ul>
-          <li>
-            Mentored groups of Flutter developers in Clean Architecture and
-            state management (BLoC/Cubit), with many students progressing into
-            their first professional roles.
-          </li>
-          <li>
-            Ran structured code reviews and 1:1 guidance, helping juniors move
-            from tutorial-style code to production-ready architecture and
-            standards.
-          </li>
-        </ul>
-      </div>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
 
-      <h2>Skills</h2>
-      <div class="skills">
-        <p><strong>Mobile:</strong> Flutter, Dart, GoRouter</p>
-        <p><strong>Architecture:</strong> Clean Architecture, BLoC, Cubit, Provider</p>
-        <p><strong>Backend:</strong> REST API, Dio, Firebase (Auth, Firestore, Cloud Functions, FCM)</p>
-        <p><strong>DI & Code Gen:</strong> get_it, injectable, freezed, json_serializable</p>
-        <p><strong>Payments:</strong> Stripe, Paymob, PayPal</p>
-        <p><strong>CI/CD:</strong> GitHub Actions, Fastlane, Shorebird (OTA), Google Play Console, App Store Connect</p>
-        <p><strong>Testing & QA:</strong> Unit Testing, Widget Testing, SOLID Principles, Clean Code, Code Reviews, Git & GitHub</p>
-        <p><strong>UI/UX:</strong> Responsive Design, Custom Animations, Material Design, Cupertino, Localizations (EN/AR)</p>
-        <p><strong>Other:</strong> Shared Preferences, Hive, App Flavors, PDF Generation, Location Services, Agile, Scrum</p>
-      </div>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      min-height: 100vh;
+    }
 
-      <h2>Projects</h2>
-      <div class="proj">
-        <strong>Cakestay:</strong> Booking and service marketplace app with onboarding, profile management, and end-to-end booking workflows.
-        <a href="https://play.google.com/store/apps/details?id=com.cakestay.app">Google Play</a> |
-        <a href="https://apps.apple.com/us/app/cakestay/id6747120526">App Store</a>
-      </div>
-      <div class="proj">
-        <strong>Zaakr:</strong> Education management app with role-based dashboards for teachers, students, and parents.
-        <a href="https://play.google.com/store/apps/details?id=com.jesoor.zaakr">Google Play</a> |
-        <a href="https://apps.apple.com/eg/app/zaakr-%D8%B0%D8%A7%D9%83%D8%B1/id6448865096">App Store</a>
-      </div>
-      <div class="proj">
-        <strong>Mudir:</strong> Real estate management app for properties, rentals, contracts, and payment tracking.
-        <a href="https://play.google.com/store/apps/details?id=com.mudirapplication.app">Google Play</a> |
-        <a href="https://apps.apple.com/eg/app/mudir-app/id6740160225">App Store</a>
-      </div>
-      <div class="proj">
-        <strong>BlueBox & Trans Smart:</strong> Logistics apps with role-based access, shipment workflows, tracking, wallet handling, and PDF generation.
-      </div>
+    /* TOP BAR */
+    .topbar {
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 32px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .topbar-name { font-size: 16px; font-weight: 600; letter-spacing: 0.02em; }
+    .topbar-role { font-size: 13px; color: #94a3b8; margin-top: 2px; }
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-pdf:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .btn-pdf svg { width: 16px; height: 16px; }
 
-      <h2>Education</h2>
-      <p>
-        <strong>Bachelor's Degree in Computer Science</strong> | Higher
-        Technological Institute, 10th of Ramadan, Egypt | Oct 2021 – Dec 2024
-      </p>
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: #fff;
+      padding: 48px 32px 40px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.02em; }
+    .hero .role { font-size: 18px; color: #93c5fd; margin: 8px 0 18px; font-weight: 400; }
+    .hero .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 16px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .hero .contact a { color: #93c5fd; text-decoration: none; }
+    .hero .contact a:hover { text-decoration: underline; }
+    .hero .contact span { color: #475569; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #e2e8f0;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 12px;
+      margin-top: 14px;
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 24px 60px;
+    }
+
+    /* SECTION */
+    .section { margin-bottom: 32px; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: #334155;
+    }
+
+    /* JOB */
+    .job {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .job:last-child { border-bottom: none; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 10px;
+    }
+    .job-title { font-size: 15px; font-weight: 600; }
+    .job-company { color: var(--accent); font-weight: 500; }
+    .job-meta { font-size: 12.5px; color: var(--muted); text-align: right; }
+    .job-tag {
+      display: inline-block;
+      font-size: 11px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 4px;
+      padding: 1px 7px;
+      margin-top: 2px;
+    }
+    .job ul {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .job ul li {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #334155;
+    }
+    .job-links {
+      margin-top: 8px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+    .job-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+    .job-links a:hover { text-decoration: underline; }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+    .skill-row {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+    .skill-label { font-weight: 600; color: var(--primary); margin-bottom: 3px; }
+    .skill-value { color: #475569; line-height: 1.5; }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .proj-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      transition: box-shadow 0.2s;
+    }
+    .proj-card:hover { box-shadow: 0 4px 16px rgba(37,99,235,0.1); }
+    .proj-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+    .proj-desc { font-size: 12.5px; color: var(--muted); line-height: 1.5; margin-bottom: 8px; }
+    .proj-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .proj-links a {
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-weight: 500;
+    }
+    .proj-links a:hover { background: var(--accent-light); }
+
+    /* EDUCATION */
+    .edu-row {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+    }
+    .edu-degree { font-weight: 600; }
+    .edu-meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+    /* PRINT */
+    @media print {
+      .topbar { display: none; }
+      body { background: #fff; }
+      .hero {
+        background: #0f172a !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .container { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div>
+    <div class="topbar-name">Ahmed Mahmoud Fyala</div>
+    <div class="topbar-role">Senior Flutter Developer</div>
+  </div>
+  <button class="btn-pdf" onclick="window.print()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+    </svg>
+    Download PDF
+  </button>
+</div>
+
+<div class="hero">
+  <h1>Ahmed Mahmoud Fyala</h1>
+  <div class="role">Senior Flutter Developer</div>
+  <div class="contact">
+    <span>afyala115@gmail.com</span>
+    <span>|</span>
+    <span>+201028418483</span>
+    <span>|</span>
+    <span>Cairo, Egypt</span>
+    <span>|</span>
+    <a href="https://www.linkedin.com/in/ahmedfyala" target="_blank">LinkedIn</a>
+    <span>|</span>
+    <a href="https://github.com/ahmedfyala" target="_blank">GitHub</a>
+    <span>|</span>
+    <a href="https://ahmedfyala.github.io/" target="_blank">Portfolio</a>
+    <span>|</span>
+    <a href="https://www.behance.net/ahmedfyala5" target="_blank">Behance</a>
+  </div>
+  <div class="badge">Military Status: Exempt</div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+      Senior Flutter Developer with 3+ years building production mobile applications across booking, logistics, education,
+      and real estate domains. Comfortable owning features end-to-end using Clean Architecture and BLoC, from implementation
+      and debugging to release and maintenance. Experienced working in cross-functional teams, improving app stability and
+      delivery speed, and mentoring Flutter developers into their first production roles.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Flutter Developer — <span class="job-company">Homa</span></div>
+          <span class="job-tag">Hybrid · Full-time</span>
+        </div>
+        <div class="job-meta">Dec 2025 – Present</div>
+      </div>
+      <ul>
+        <li>Led delivery of core host experience flows — including cancellation, cleaning services, and listing browsing — using Clean Architecture and BLoC, giving hosts clearer control over their bookings and reducing escalation to support.</li>
+        <li>Investigated and resolved critical production issues across notifications, media loading, and API usage (HTTP 429 rate limiting, race conditions), resulting in a noticeably more stable experience under peak traffic.</li>
+        <li>Redesigned listing experience from paginated pages to infinite scroll, making property discovery smoother and more natural for users.</li>
+        <li>Automated and improved the release pipeline with GitHub Actions, Fastlane, and Shorebird OTA, shortening release cycles and enabling safe hotfixes to production without disrupting users.</li>
+      </ul>
+      <div class="job-links">
+        Saudi-focused booking platform ·
+        <a href="https://apps.apple.com/us/app/homa/id6744891013" target="_blank">App Store</a> ·
+        <a href="https://play.google.com/store/apps/details?id=com.homa.homaapp.app" target="_blank">Google Play</a>
+      </div>
     </div>
-  </body>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Flutter Developer — <span class="job-company">Cakestay</span></div>
+          <span class="job-tag">Remote · Full-time</span>
+        </div>
+        <div class="job-meta">Feb 2025 – Nov 2025</div>
+      </div>
+      <ul>
+        <li>Owned end-to-end booking and marketplace flows from onboarding to checkout, helping bring the product from zero to live apps on the App Store and Google Play.</li>
+        <li>Integrated Stripe and Paymob with Firebase backend to support secure, multi-currency payments, allowing the platform to serve both local and international users.</li>
+        <li>Shipped fully localized (EN/AR), responsive UI with real-time push notifications, improving day-to-day engagement across both platforms.</li>
+      </ul>
+      <div class="job-links">
+        <a href="https://apps.apple.com/us/app/cakestay/id6747120526" target="_blank">App Store</a> ·
+        <a href="https://play.google.com/store/apps/details?id=com.cakestay.app" target="_blank">Google Play</a>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Flutter Developer — <span class="job-company">Baroline</span></div>
+          <span class="job-tag">Remote</span>
+        </div>
+        <div class="job-meta">Nov 2024 – May 2025</div>
+      </div>
+      <ul>
+        <li>Built core logistics workflows — shipment creation, wallet management, and automated PDF generation — reducing manual back-office work and making order processing smoother for operations teams.</li>
+        <li>Implemented real-time GPS tracking and location-based branch discovery, giving field teams live visibility on shipments and making daily coordination easier.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Flutter Developer — <span class="job-company">Semicolon</span></div>
+          <span class="job-tag">Remote · Full-time</span>
+        </div>
+        <div class="job-meta">Dec 2023 – Nov 2024</div>
+      </div>
+      <ul>
+        <li>Architected multi-tenant support for a cross-school education platform via dynamic API configuration, allowing the product to onboard multiple institutions without per-client forks or additional infrastructure.</li>
+        <li>Led post-migration debugging and UI refactoring efforts, reducing crashes and improving store ratings and user feedback over the following months.</li>
+      </ul>
+      <div class="job-links">
+        Jsoor App ·
+        <a href="https://apps.apple.com/eg/app/jesoor/id6739429898" target="_blank">App Store</a> ·
+        <a href="https://play.google.com/store/apps/details?id=semicolon.jessor.stu" target="_blank">Google Play</a>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Flutter Mentor — <span class="job-company">Route</span></div>
+        </div>
+        <div class="job-meta">Dec 2023 – Apr 2026</div>
+      </div>
+      <ul>
+        <li>Mentored groups of Flutter developers in Clean Architecture and state management (BLoC/Cubit), with many students progressing into their first professional roles.</li>
+        <li>Ran structured code reviews and 1:1 guidance, helping juniors move from tutorial-style code to production-ready architecture and standards.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><div class="skill-label">Mobile</div><div class="skill-value">Flutter, Dart, GoRouter</div></div>
+      <div class="skill-row"><div class="skill-label">Architecture</div><div class="skill-value">Clean Architecture, BLoC, Cubit, Provider</div></div>
+      <div class="skill-row"><div class="skill-label">Backend</div><div class="skill-value">REST API, Dio, Firebase (Auth, Firestore, Functions, FCM)</div></div>
+      <div class="skill-row"><div class="skill-label">DI & Code Gen</div><div class="skill-value">get_it, injectable, freezed, json_serializable</div></div>
+      <div class="skill-row"><div class="skill-label">Payments</div><div class="skill-value">Stripe, Paymob, PayPal</div></div>
+      <div class="skill-row"><div class="skill-label">CI/CD</div><div class="skill-value">GitHub Actions, Fastlane, Shorebird OTA, App Store Connect, Google Play Console</div></div>
+      <div class="skill-row"><div class="skill-label">Testing & QA</div><div class="skill-value">Unit Testing, Widget Testing, SOLID, Clean Code, Code Reviews, Git</div></div>
+      <div class="skill-row"><div class="skill-label">UI/UX</div><div class="skill-value">Responsive Design, Custom Animations, Material, Cupertino, Localizations (EN/AR)</div></div>
+      <div class="skill-row"><div class="skill-label">Other</div><div class="skill-value">Hive, Shared Preferences, App Flavors, PDF Generation, Location Services, Agile</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Projects</div>
+    <div class="projects-grid">
+      <div class="proj-card">
+        <div class="proj-name">Cakestay</div>
+        <div class="proj-desc">Booking and service marketplace app with onboarding, profile management, and end-to-end booking workflows.</div>
+        <div class="proj-links">
+          <a href="https://play.google.com/store/apps/details?id=com.cakestay.app" target="_blank">Google Play</a>
+          <a href="https://apps.apple.com/us/app/cakestay/id6747120526" target="_blank">App Store</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">Zaakr</div>
+        <div class="proj-desc">Education management app with role-based dashboards for teachers, students, and parents.</div>
+        <div class="proj-links">
+          <a href="https://play.google.com/store/apps/details?id=com.jesoor.zaakr" target="_blank">Google Play</a>
+          <a href="https://apps.apple.com/eg/app/zaakr-%D8%B0%D8%A7%D9%83%D8%B1/id6448865096" target="_blank">App Store</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">Mudir</div>
+        <div class="proj-desc">Real estate management app for properties, rentals, contracts, and payment tracking.</div>
+        <div class="proj-links">
+          <a href="https://play.google.com/store/apps/details?id=com.mudirapplication.app" target="_blank">Google Play</a>
+          <a href="https://apps.apple.com/eg/app/mudir-app/id6740160225" target="_blank">App Store</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-name">BlueBox & Trans Smart</div>
+        <div class="proj-desc">Logistics apps with role-based access, shipment workflows, tracking, wallet handling, and PDF generation.</div>
+        <div class="proj-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div class="edu-degree">Bachelor's Degree in Computer Science</div>
+      <div class="edu-meta">Higher Technological Institute, 10th of Ramadan, Egypt &nbsp;·&nbsp; Oct 2021 – Dec 2024</div>
+    </div>
+  </div>
+
+</div>
+</body>
 </html>
