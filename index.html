@@ -13,6 +13,8 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #111827;
       }
+
+      /* TOOLBAR */
       .toolbar {
         position: sticky;
         top: 0;
@@ -41,63 +43,53 @@
       }
       .btn-pdf:hover { background: #1d4ed8; }
       .btn-pdf svg { width: 15px; height: 15px; }
+
+      /* PAGE SHELL */
       .page-shell {
         display: flex;
         justify-content: center;
         padding: 28px 16px 48px;
       }
+
+      /* CV SHEET - original sizes */
       .page {
         width: 210mm;
         min-height: 297mm;
-        margin: 0;
-        padding: 8mm 11mm;
-        box-sizing: border-box;
+        padding: 11mm 12mm;
         background: #fff;
         box-shadow: 0 8px 30px rgba(0,0,0,0.12);
       }
-      h1 { font-size: 22px; margin: 0 0 3px; text-align: center; }
-      .role { font-size: 13px; color: #4b5563; text-align: center; margin-bottom: 3px; }
-      .contact {
-        font-size: 10.5px;
-        text-align: center;
-        color: #4b5563;
-        margin-bottom: 5px;
-        line-height: 1.45;
-      }
+      h1 { font-size: 25px; margin: 0 0 4px; text-align: center; }
+      .role { font-size: 15px; color: #4b5563; text-align: center; margin-bottom: 4px; }
+      .contact { font-size: 11.5px; text-align: center; color: #4b5563; margin-bottom: 6px; line-height: 1.5; }
       a { color: #1d4ed8; text-decoration: none; }
       a:hover { text-decoration: underline; }
-      h2 {
-        font-size: 11px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin: 7px 0 3px;
-        border-bottom: 1px solid #d1d5db;
-        padding-bottom: 2px;
-        color: #0f172a;
-      }
-      p { margin: 0 0 3px; font-size: 11px; line-height: 1.35; }
-      .skills p { margin: 0 0 1.5px; }
-      .job { margin-bottom: 3px; }
-      .jobhead { font-size: 11.5px; margin-bottom: 1px; }
-      .jobhead strong { font-size: 11.5px; }
+      h2 { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; margin: 10px 0 4px; border-bottom: 1px solid #d1d5db; padding-bottom: 3px; color: #0f172a; }
+      p { margin: 0 0 4px; font-size: 12px; line-height: 1.38; }
+      .skills p { margin: 0 0 2px; }
+      .job { margin-bottom: 4px; }
+      .jobhead { font-size: 13px; margin-bottom: 1px; }
+      .jobhead strong { font-size: 13px; }
       .meta { color: #4b5563; }
-      ul { margin: 1px 0 1px 14px; padding: 0; }
-      li { font-size: 10.5px; line-height: 1.35; margin-bottom: 0; }
-      .proj { margin-bottom: 2px; font-size: 11px; line-height: 1.35; }
+      ul { margin: 2px 0 1px 16px; padding: 0; }
+      li { font-size: 11.5px; line-height: 1.38; margin-bottom: 0; }
+      .proj { margin-bottom: 3px; font-size: 12px; line-height: 1.38; }
 
+      /* PRINT: scale down to fit 1 page, hide toolbar */
       @page { size: A4; margin: 0; }
       @media print {
         .toolbar { display: none; }
-        .page-shell { padding: 0; background: #fff; }
-        html, body { background: #fff; }
+        html, body { background: #fff; margin: 0; padding: 0; }
+        .page-shell { padding: 0; margin: 0; display: block; }
         .page {
-          margin: 0;
-          padding: 8mm 11mm;
           box-shadow: none;
           width: 210mm;
           height: 297mm;
-          min-height: unset;
+          padding: 11mm 12mm;
+          margin: 0;
           overflow: hidden;
+          transform-origin: top left;
+          transform: scale(0.88);
         }
       }
     </style>
