@@ -14,7 +14,6 @@
         color: #111827;
       }
 
-      /* TOOLBAR */
       .toolbar {
         position: sticky;
         top: 0;
@@ -44,14 +43,12 @@
       .btn-pdf:hover { background: #1d4ed8; }
       .btn-pdf svg { width: 15px; height: 15px; }
 
-      /* PAGE SHELL */
       .page-shell {
         display: flex;
         justify-content: center;
         padding: 28px 16px 48px;
       }
 
-      /* CV SHEET - original sizes */
       .page {
         width: 210mm;
         min-height: 297mm;
@@ -59,6 +56,7 @@
         background: #fff;
         box-shadow: 0 8px 30px rgba(0,0,0,0.12);
       }
+
       h1 { font-size: 25px; margin: 0 0 4px; text-align: center; }
       .role { font-size: 15px; color: #4b5563; text-align: center; margin-bottom: 4px; }
       .contact { font-size: 11.5px; text-align: center; color: #4b5563; margin-bottom: 6px; line-height: 1.5; }
@@ -75,21 +73,31 @@
       li { font-size: 11.5px; line-height: 1.38; margin-bottom: 0; }
       .proj { margin-bottom: 3px; font-size: 12px; line-height: 1.38; }
 
-      /* PRINT: scale down to fit 1 page, hide toolbar */
-      @page { size: A4; margin: 0; }
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
       @media print {
+        html, body {
+          background: #fff;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
         .toolbar { display: none; }
-        html, body { background: #fff; margin: 0; padding: 0; }
-        .page-shell { padding: 0; margin: 0; display: block; }
-        .page {
-          box-shadow: none;
-          width: 210mm;
-          height: 297mm;
-          padding: 11mm 12mm;
+        .page-shell {
+          display: block;
+          padding: 0;
           margin: 0;
-          overflow: hidden;
-          transform-origin: top left;
-          transform: scale(0.88);
+        }
+        .page {
+          width: 100%;
+          min-height: unset;
+          height: auto;
+          padding: 0;
+          margin: 0;
+          box-shadow: none;
+          zoom: 0.78;
         }
       }
     </style>
@@ -125,9 +133,9 @@
 
         <h2>Experience</h2>
         <div class="job">
-          <div class="jobhead"><strong>Flutter Developer — Homa</strong> <span class="meta">| Dec 2025 – Present | Hybrid, Full-time</span></div>
+          <div class="jobhead"><strong>Flutter Developer &mdash; Homa</strong> <span class="meta">| Dec 2025 &ndash; Present | Hybrid, Full-time</span></div>
           <ul>
-            <li>Led delivery of core host experience flows — cancellation, cleaning services, and listing browsing — using Clean Architecture and BLoC, giving hosts clearer control and reducing escalation to support.</li>
+            <li>Led delivery of core host experience flows &mdash; cancellation, cleaning services, and listing browsing &mdash; using Clean Architecture and BLoC, giving hosts clearer control and reducing escalation to support.</li>
             <li>Investigated and resolved critical production issues across notifications, media loading, and API usage (HTTP 429, race conditions), resulting in a noticeably more stable experience under peak traffic.</li>
             <li>Redesigned listing from paginated pages to infinite scroll, making property discovery smoother for users.</li>
             <li>Automated the release pipeline with GitHub Actions, Fastlane, and Shorebird OTA, shortening release cycles and enabling safe hotfixes without disrupting users.</li>
@@ -136,7 +144,7 @@
         </div>
 
         <div class="job">
-          <div class="jobhead"><strong>Flutter Developer — Cakestay</strong> <span class="meta">| Feb 2025 – Nov 2025 | Remote, Full-time</span></div>
+          <div class="jobhead"><strong>Flutter Developer &mdash; Cakestay</strong> <span class="meta">| Feb 2025 &ndash; Nov 2025 | Remote, Full-time</span></div>
           <ul>
             <li>Owned end-to-end booking and marketplace flows from onboarding to checkout, bringing the product from zero to live on both stores.</li>
             <li>Integrated Stripe and Paymob with Firebase backend for secure, multi-currency payments serving local and international users.</li>
@@ -146,15 +154,15 @@
         </div>
 
         <div class="job">
-          <div class="jobhead"><strong>Flutter Developer — Baroline</strong> <span class="meta">| Nov 2024 – May 2025 | Remote</span></div>
+          <div class="jobhead"><strong>Flutter Developer &mdash; Baroline</strong> <span class="meta">| Nov 2024 &ndash; May 2025 | Remote</span></div>
           <ul>
-            <li>Built core logistics workflows — shipment creation, wallet management, and automated PDF generation — streamlining back-office and order processing.</li>
+            <li>Built core logistics workflows &mdash; shipment creation, wallet management, and automated PDF generation &mdash; streamlining back-office and order processing.</li>
             <li>Implemented real-time GPS tracking and location-based branch discovery for field teams.</li>
           </ul>
         </div>
 
         <div class="job">
-          <div class="jobhead"><strong>Flutter Developer — Semicolon</strong> <span class="meta">| Dec 2023 – Nov 2024 | Remote, Full-time</span></div>
+          <div class="jobhead"><strong>Flutter Developer &mdash; Semicolon</strong> <span class="meta">| Dec 2023 &ndash; Nov 2024 | Remote, Full-time</span></div>
           <ul>
             <li>Architected multi-tenant support via dynamic API configuration, onboarding multiple institutions without per-client forks.</li>
             <li>Led post-migration debugging and UI refactoring, reducing crashes and improving store ratings.</li>
@@ -163,7 +171,7 @@
         </div>
 
         <div class="job">
-          <div class="jobhead"><strong>Flutter Mentor — Route</strong> <span class="meta">| Dec 2023 – Apr 2026</span></div>
+          <div class="jobhead"><strong>Flutter Mentor &mdash; Route</strong> <span class="meta">| Dec 2023 &ndash; Apr 2026</span></div>
           <ul>
             <li>Mentored Flutter developers in Clean Architecture and BLoC/Cubit, with many progressing into their first professional roles.</li>
             <li>Ran structured code reviews and 1:1 guidance, moving juniors from tutorial code to production-ready standards.</li>
@@ -190,7 +198,7 @@
         <div class="proj"><strong>BlueBox &amp; Trans Smart:</strong> Logistics apps with role-based access, shipment workflows, tracking, wallet, and PDF generation.</div>
 
         <h2>Education</h2>
-        <p><strong>Bachelor&#39;s Degree in Computer Science</strong> | Higher Technological Institute, 10th of Ramadan, Egypt | Oct 2021 – Dec 2024</p>
+        <p><strong>Bachelor&#39;s Degree in Computer Science</strong> | Higher Technological Institute, 10th of Ramadan, Egypt | Oct 2021 &ndash; Dec 2024</p>
       </div>
     </div>
 
