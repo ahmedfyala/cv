@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ahmed Mahmoud Fyala CV</title>
     <style>
-      /* ── PAGE WRAPPER (website shell) ── */
       * { box-sizing: border-box; }
       html, body {
         margin: 0;
@@ -14,8 +13,6 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #111827;
       }
-
-      /* Sticky top toolbar */
       .toolbar {
         position: sticky;
         top: 0;
@@ -48,15 +45,11 @@
       }
       .btn-pdf:hover { background: #1d4ed8; }
       .btn-pdf svg { width: 15px; height: 15px; }
-
-      /* Center the CV sheet on screen */
       .page-shell {
         display: flex;
         justify-content: center;
         padding: 28px 16px 48px;
       }
-
-      /* ── CV SHEET (original styling, untouched) ── */
       .page {
         width: 210mm;
         min-height: 297mm;
@@ -122,8 +115,6 @@
         font-size: 12px;
         line-height: 1.38;
       }
-
-      /* ── PRINT: hide toolbar, restore sheet ── */
       @page { size: A4; margin: 0; }
       @media print {
         .toolbar { display: none; }
@@ -141,7 +132,6 @@
   </head>
   <body>
 
-    <!-- TOOLBAR -->
     <div class="toolbar">
       <span class="toolbar-label">Ahmed Mahmoud Fyala &mdash; CV</span>
       <button class="btn-pdf" onclick="window.print()">
@@ -152,13 +142,14 @@
       </button>
     </div>
 
-    <!-- CV SHEET -->
     <div class="page-shell">
       <div class="page">
         <h1>Ahmed Mahmoud Fyala</h1>
         <div class="role">Senior Flutter Developer</div>
         <div class="contact">
-          afyala115@gmail.com | +201028418483 | Cairo, Egypt | Military status: Exempt |
+          <a href="mailto:afyala115@gmail.com">afyala115@gmail.com</a> |
+          <a href="tel:+201028418483">+201028418483</a> |
+          Cairo, Egypt | Military status: Exempt |
           <a href="https://www.linkedin.com/in/ahmedfyala">LinkedIn</a> |
           <a href="https://github.com/ahmedfyala">GitHub</a> |
           <a href="https://ahmedfyala.github.io/">Portfolio</a> |
