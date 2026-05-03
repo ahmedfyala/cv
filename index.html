@@ -24,11 +24,7 @@
         padding: 10px 24px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.25);
       }
-      .toolbar-label {
-        color: #94a3b8;
-        font-size: 13px;
-        letter-spacing: 0.03em;
-      }
+      .toolbar-label { color: #94a3b8; font-size: 13px; letter-spacing: 0.03em; }
       .btn-pdf {
         display: inline-flex;
         align-items: center;
@@ -54,67 +50,41 @@
         width: 210mm;
         min-height: 297mm;
         margin: 0;
-        padding: 11mm 12mm;
+        padding: 8mm 11mm;
         box-sizing: border-box;
         background: #fff;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
       }
-      h1 {
-        font-size: 25px;
-        margin: 0 0 4px;
-        text-align: center;
-      }
-      .role {
-        font-size: 15px;
-        color: #4b5563;
-        text-align: center;
-        margin-bottom: 4px;
-      }
+      h1 { font-size: 22px; margin: 0 0 3px; text-align: center; }
+      .role { font-size: 13px; color: #4b5563; text-align: center; margin-bottom: 3px; }
       .contact {
-        font-size: 11.5px;
+        font-size: 10.5px;
         text-align: center;
         color: #4b5563;
-        margin-bottom: 6px;
-        line-height: 1.5;
+        margin-bottom: 5px;
+        line-height: 1.45;
       }
-      a {
-        color: #1d4ed8;
-        text-decoration: none;
-      }
+      a { color: #1d4ed8; text-decoration: none; }
       a:hover { text-decoration: underline; }
       h2 {
-        font-size: 12.5px;
+        font-size: 11px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin: 10px 0 4px;
+        margin: 7px 0 3px;
         border-bottom: 1px solid #d1d5db;
-        padding-bottom: 3px;
+        padding-bottom: 2px;
         color: #0f172a;
       }
-      p {
-        margin: 0 0 4px;
-        font-size: 12px;
-        line-height: 1.38;
-      }
-      .skills p { margin: 0 0 2px; }
-      .job { margin-bottom: 4px; }
-      .jobhead { font-size: 13px; margin-bottom: 1px; }
-      .jobhead strong { font-size: 13px; }
+      p { margin: 0 0 3px; font-size: 11px; line-height: 1.35; }
+      .skills p { margin: 0 0 1.5px; }
+      .job { margin-bottom: 3px; }
+      .jobhead { font-size: 11.5px; margin-bottom: 1px; }
+      .jobhead strong { font-size: 11.5px; }
       .meta { color: #4b5563; }
-      ul {
-        margin: 2px 0 1px 16px;
-        padding: 0;
-      }
-      li {
-        font-size: 11.5px;
-        line-height: 1.38;
-        margin-bottom: 0;
-      }
-      .proj {
-        margin-bottom: 3px;
-        font-size: 12px;
-        line-height: 1.38;
-      }
+      ul { margin: 1px 0 1px 14px; padding: 0; }
+      li { font-size: 10.5px; line-height: 1.35; margin-bottom: 0; }
+      .proj { margin-bottom: 2px; font-size: 11px; line-height: 1.35; }
+
       @page { size: A4; margin: 0; }
       @media print {
         .toolbar { display: none; }
@@ -122,10 +92,12 @@
         html, body { background: #fff; }
         .page {
           margin: 0;
-          padding: 11mm 12mm;
+          padding: 8mm 11mm;
           box-shadow: none;
-          width: auto;
-          min-height: auto;
+          width: 210mm;
+          height: 297mm;
+          min-height: unset;
+          overflow: hidden;
         }
       }
     </style>
@@ -157,75 +129,52 @@
         </div>
 
         <h2>Summary</h2>
-        <p>
-          Senior Flutter Developer with 3+ years building production mobile
-          applications across booking, logistics, education, and real estate
-          domains. Comfortable owning features end-to-end using Clean
-          Architecture and BLoC, from implementation and debugging to release and
-          maintenance. Experienced working in cross-functional teams, improving
-          app stability and delivery speed, and mentoring Flutter developers into
-          their first production roles.
-        </p>
+        <p>Senior Flutter Developer with 3+ years building production mobile applications across booking, logistics, education, and real estate domains. Comfortable owning features end-to-end using Clean Architecture and BLoC, from implementation and debugging to release and maintenance. Experienced working in cross-functional teams, improving app stability and delivery speed, and mentoring Flutter developers into their first production roles.</p>
 
         <h2>Experience</h2>
         <div class="job">
-          <div class="jobhead">
-            <strong>Flutter Developer — Homa</strong>
-            <span class="meta">| Dec 2025 – Present | Hybrid, Full-time</span>
-          </div>
+          <div class="jobhead"><strong>Flutter Developer — Homa</strong> <span class="meta">| Dec 2025 – Present | Hybrid, Full-time</span></div>
           <ul>
-            <li>Led delivery of core host experience flows — including cancellation, cleaning services, and listing browsing — using Clean Architecture and BLoC, giving hosts clearer control over their bookings and reducing escalation to support.</li>
-            <li>Investigated and resolved critical production issues across notifications, media loading, and API usage (HTTP 429 rate limiting, race conditions), resulting in a noticeably more stable experience under peak traffic.</li>
-            <li>Redesigned listing experience from paginated pages to infinite scroll, making property discovery smoother and more natural for users.</li>
-            <li>Automated and improved the release pipeline with GitHub Actions, Fastlane, and Shorebird OTA, shortening release cycles and enabling safe hotfixes to production without disrupting users.</li>
+            <li>Led delivery of core host experience flows — cancellation, cleaning services, and listing browsing — using Clean Architecture and BLoC, giving hosts clearer control and reducing escalation to support.</li>
+            <li>Investigated and resolved critical production issues across notifications, media loading, and API usage (HTTP 429, race conditions), resulting in a noticeably more stable experience under peak traffic.</li>
+            <li>Redesigned listing from paginated pages to infinite scroll, making property discovery smoother for users.</li>
+            <li>Automated the release pipeline with GitHub Actions, Fastlane, and Shorebird OTA, shortening release cycles and enabling safe hotfixes without disrupting users.</li>
           </ul>
           <p>Saudi-focused booking platform | <a href="https://apps.apple.com/us/app/homa/id6744891013">App Store</a> | <a href="https://play.google.com/store/apps/details?id=com.homa.homaapp.app">Google Play</a></p>
         </div>
 
         <div class="job">
-          <div class="jobhead">
-            <strong>Flutter Developer — Cakestay</strong>
-            <span class="meta">| Feb 2025 – Nov 2025 | Remote, Full-time</span>
-          </div>
+          <div class="jobhead"><strong>Flutter Developer — Cakestay</strong> <span class="meta">| Feb 2025 – Nov 2025 | Remote, Full-time</span></div>
           <ul>
-            <li>Owned end-to-end booking and marketplace flows from onboarding to checkout, helping bring the product from zero to live apps on the App Store and Google Play.</li>
-            <li>Integrated Stripe and Paymob with Firebase backend to support secure, multi-currency payments, allowing the platform to serve both local and international users.</li>
-            <li>Shipped fully localized (EN/AR), responsive UI with real-time push notifications, improving day-to-day engagement across both platforms.</li>
+            <li>Owned end-to-end booking and marketplace flows from onboarding to checkout, bringing the product from zero to live on both stores.</li>
+            <li>Integrated Stripe and Paymob with Firebase backend for secure, multi-currency payments serving local and international users.</li>
+            <li>Shipped fully localized (EN/AR), responsive UI with real-time push notifications.</li>
           </ul>
           <p>Cakestay App | <a href="https://apps.apple.com/us/app/cakestay/id6747120526">App Store</a> | <a href="https://play.google.com/store/apps/details?id=com.cakestay.app">Google Play</a></p>
         </div>
 
         <div class="job">
-          <div class="jobhead">
-            <strong>Flutter Developer — Baroline</strong>
-            <span class="meta">| Nov 2024 – May 2025 | Remote</span>
-          </div>
+          <div class="jobhead"><strong>Flutter Developer — Baroline</strong> <span class="meta">| Nov 2024 – May 2025 | Remote</span></div>
           <ul>
-            <li>Built core logistics workflows — shipment creation, wallet management, and automated PDF generation — reducing manual back-office work and making order processing smoother for operations teams.</li>
-            <li>Implemented real-time GPS tracking and location-based branch discovery, giving field teams live visibility on shipments and making daily coordination easier.</li>
+            <li>Built core logistics workflows — shipment creation, wallet management, and automated PDF generation — streamlining back-office and order processing.</li>
+            <li>Implemented real-time GPS tracking and location-based branch discovery for field teams.</li>
           </ul>
         </div>
 
         <div class="job">
-          <div class="jobhead">
-            <strong>Flutter Developer — Semicolon</strong>
-            <span class="meta">| Dec 2023 – Nov 2024 | Remote, Full-time</span>
-          </div>
+          <div class="jobhead"><strong>Flutter Developer — Semicolon</strong> <span class="meta">| Dec 2023 – Nov 2024 | Remote, Full-time</span></div>
           <ul>
-            <li>Architected multi-tenant support for a cross-school education platform via dynamic API configuration, allowing the product to onboard multiple institutions without per-client forks or additional infrastructure.</li>
-            <li>Led post-migration debugging and UI refactoring efforts, reducing crashes and improving store ratings and user feedback over the following months.</li>
+            <li>Architected multi-tenant support via dynamic API configuration, onboarding multiple institutions without per-client forks.</li>
+            <li>Led post-migration debugging and UI refactoring, reducing crashes and improving store ratings.</li>
           </ul>
           <p>Jsoor App | <a href="https://apps.apple.com/eg/app/jesoor/id6739429898">App Store</a> | <a href="https://play.google.com/store/apps/details?id=semicolon.jessor.stu">Google Play</a></p>
         </div>
 
         <div class="job">
-          <div class="jobhead">
-            <strong>Flutter Mentor — Route</strong>
-            <span class="meta">| Dec 2023 – Apr 2026</span>
-          </div>
+          <div class="jobhead"><strong>Flutter Mentor — Route</strong> <span class="meta">| Dec 2023 – Apr 2026</span></div>
           <ul>
-            <li>Mentored groups of Flutter developers in Clean Architecture and state management (BLoC/Cubit), with many students progressing into their first professional roles.</li>
-            <li>Ran structured code reviews and 1:1 guidance, helping juniors move from tutorial-style code to production-ready architecture and standards.</li>
+            <li>Mentored Flutter developers in Clean Architecture and BLoC/Cubit, with many progressing into their first professional roles.</li>
+            <li>Ran structured code reviews and 1:1 guidance, moving juniors from tutorial code to production-ready standards.</li>
           </ul>
         </div>
 
@@ -243,10 +192,10 @@
         </div>
 
         <h2>Projects</h2>
-        <div class="proj"><strong>Cakestay:</strong> Booking and service marketplace app with onboarding, profile management, and end-to-end booking workflows. <a href="https://play.google.com/store/apps/details?id=com.cakestay.app">Google Play</a> | <a href="https://apps.apple.com/us/app/cakestay/id6747120526">App Store</a></div>
-        <div class="proj"><strong>Zaakr:</strong> Education management app with role-based dashboards for teachers, students, and parents. <a href="https://play.google.com/store/apps/details?id=com.jesoor.zaakr">Google Play</a> | <a href="https://apps.apple.com/eg/app/zaakr-%D8%B0%D8%A7%D9%83%D8%B1/id6448865096">App Store</a></div>
-        <div class="proj"><strong>Mudir:</strong> Real estate management app for properties, rentals, contracts, and payment tracking. <a href="https://play.google.com/store/apps/details?id=com.mudirapplication.app">Google Play</a> | <a href="https://apps.apple.com/eg/app/mudir-app/id6740160225">App Store</a></div>
-        <div class="proj"><strong>BlueBox &amp; Trans Smart:</strong> Logistics apps with role-based access, shipment workflows, tracking, wallet handling, and PDF generation.</div>
+        <div class="proj"><strong>Cakestay:</strong> Booking and service marketplace with onboarding, profile management, and end-to-end booking. <a href="https://play.google.com/store/apps/details?id=com.cakestay.app">Google Play</a> | <a href="https://apps.apple.com/us/app/cakestay/id6747120526">App Store</a></div>
+        <div class="proj"><strong>Zaakr:</strong> Education app with role-based dashboards for teachers, students, and parents. <a href="https://play.google.com/store/apps/details?id=com.jesoor.zaakr">Google Play</a> | <a href="https://apps.apple.com/eg/app/zaakr-%D8%B0%D8%A7%D9%83%D8%B1/id6448865096">App Store</a></div>
+        <div class="proj"><strong>Mudir:</strong> Real estate app for properties, rentals, contracts, and payment tracking. <a href="https://play.google.com/store/apps/details?id=com.mudirapplication.app">Google Play</a> | <a href="https://apps.apple.com/eg/app/mudir-app/id6740160225">App Store</a></div>
+        <div class="proj"><strong>BlueBox &amp; Trans Smart:</strong> Logistics apps with role-based access, shipment workflows, tracking, wallet, and PDF generation.</div>
 
         <h2>Education</h2>
         <p><strong>Bachelor&#39;s Degree in Computer Science</strong> | Higher Technological Institute, 10th of Ramadan, Egypt | Oct 2021 – Dec 2024</p>
